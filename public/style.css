@@ -55,6 +55,19 @@ video {
   cursor: pointer;
 }
 
+.main__controls__button i {
+  font-size: 24px;
+}
+
+.main__controls__button:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
+
+.leave_meeting {
+  color: #eb534b;
+}
+
 .main__right {
   flex: 0.2;
 }
