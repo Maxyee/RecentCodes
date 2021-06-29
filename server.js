@@ -28,6 +28,10 @@ io.on('connection', socket => {
         socket.to(roomId).broadcast.emit('user-connected', userId);
         //socket.broadcast.emit('user-connected', userId);
         //console.log('joined Room')
+
+        socket.on('message', message => {
+            io.to(roomId).emit('createNewMessage', message)
+        })
     });
 })
 
