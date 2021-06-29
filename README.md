@@ -1,4 +1,4 @@
-# Whatsapp-clone
+# Zoom-clone
 
 ![alt text](https://github.com/Maxyee/zoom-clone/blob/master/screen-shot/zoom-clone.png)
 
