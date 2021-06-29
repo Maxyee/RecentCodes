@@ -45,6 +45,7 @@ navigator.mediaDevices.getUserMedia({
     socket.on('createNewMessage', message => {
         //console.log('this is coming from server', message);
         $('.messages').append(`<li class="message"><b>user</b><br/>${message}</li>`)
+        scrollToBottom(); 
     })
 })
 
@@ -67,5 +68,11 @@ const addVideoStream = (video, stream) => {
         video.play();
     })
     videoGrid.append(video);
+}
+
+
+const scrollToBottom = () => {
+    var d = $('.main__chat_window');
+    d.scrollTop(d.prop("scrollHeight"));
 }
 
